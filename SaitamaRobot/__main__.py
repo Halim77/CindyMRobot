@@ -74,14 +74,15 @@ def get_readable_time(seconds: int) -> str:
 
 PM_START_TEXT = """
 Hi {}, my name is {}! 
-I am an Anime themed group management bot.
+I am Gilrs and themed group management bot.
+My boyfriend is a @MRojeck_Lim.
 Build by weebs for weebs, I specialize in managing anime and similar themed groups.
 You can find my list of available commands with /help.
 """
 
 HELP_STRINGS = """
 Hey there! My name is *{}*.
-I'm a Loli For Fun and help admins manage their groups with Some weebs touch! Have a look at the following for an idea of some of \
+I'm a Cindy For Fun and help admins manage their groups with Some weebs touch! Have a look at the following for an idea of some of \
 the things I can help you with.
 
 *Main* commands available:
@@ -100,7 +101,7 @@ And the following:
     "" if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n",
 )
 
-PROOHOLIC_IMG = "https://wallpapercave.com/wp/wp4034195.jpg"
+CINDYMARETA_IMG = "https://telegra.ph/file/2340257e13511c20d0cda.jpg"
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -217,7 +218,7 @@ def start(update: Update, context: CallbackContext):
                     [
                         [
                             InlineKeyboardButton(
-                                text="☑️ Add Prooholic Robot to your group",
+                                text="☑️ Add Cindy's Robot to your group",
                                 url="t.me/{}?startgroup=true".format(
                                     context.bot.username
                                 ),
@@ -226,7 +227,7 @@ def start(update: Update, context: CallbackContext):
                         [
                             InlineKeyboardButton(
                                 text="🗄 Source code",
-                                url="https://github.com/prooholic/ProoholicRobot",
+                                url="https://github.com/Halim77/CindyMRobot",
                             )
                         ],
                     ]
